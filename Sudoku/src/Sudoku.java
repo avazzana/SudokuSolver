@@ -14,7 +14,7 @@ public class Sudoku{
 		JFrame startFrame = new JFrame();
 
 		JLabel startScreen = new JLabel();
-		startScreen.setIcon(new ImageIcon("C:/Users/vazzanam/git/Audracious/Desperation/SudokuMain.png"));
+		startScreen.setIcon(new ImageIcon("SudokuMain.png"));
 		startFrame.add(startScreen, BorderLayout.CENTER);
 		
 		// When pressed, will dispose of current frame and load the game
@@ -33,7 +33,7 @@ public class Sudoku{
 		startFrame.dispose();
 		
 		JFrame frame = new JFrame("Sudoku");
-		SudokuComponent sc = new SudokuComponent("C:/Users/vazzanam/git/Audracious/Desperation/puzzle44.txt");
+		SudokuComponent sc = new SudokuComponent("puzzle44.txt");
 		SudokuListener sl = new SudokuListener(sc);
 		sc.addMouseListener(sl);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
